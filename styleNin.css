@@ -1,6 +1,23 @@
+.characters-section {
+  width: 100%;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.main-content-character {
+  display: flex;
+  align-items: center;
+}
+
 .card-character {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.card-character h3 {
+  margin: 0;
 }
 
 .character-a-container {
@@ -8,7 +25,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  height: auto;
+  height: 100%;
   text-align: center;
   overflow: hidden;
   border-radius: 10px;
@@ -27,16 +44,47 @@
 }
 
 .character-img-container {
+  display: flex;
   z-index: -1;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  transition: transform 200ms ease-in-out 0s;
+  /* transition: transform 200ms ease-in-out 0s; */
+  padding: 0px;
+}
+
+.grid-content {
+  padding: 0 2rem;
 }
 
 .cards-container {
+  /*Cambiar a grid*/
+
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.img-character {
+  display: block;
+  min-height: 1px;
+  width: 100%;
+}
+
+.bg-img {
+  display: block;
+  min-height: 1px;
+  width: 100%;
+}
+
+.character-a-container:hover .img-character {
+  transform: scale(1.15);
+  transition: transform 200ms ease-in-out 0s;
+}
+
+.character-a-container:hover .bg-img {
+  transform: scale(0.87);
+  transition: transform 200ms ease-in-out 0s;
+  object-fit: cover;
 }
