@@ -1,0 +1,20 @@
+.descripcion{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen{
+    background-color: blue;
+    box-sizing: border-box;
+}
+.button{
+    border-radius: 20px;
+    background-color: rgb(230, 0, 18);
+    color: white;
+    font-size: 25px;
+}
+.button:hover{
+    border-radius: 20px;
+    background-color: rgb(172, 0, 13);
+    color: white;
+    font-size: 25px;
+}
