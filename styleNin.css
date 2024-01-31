@@ -6,8 +6,12 @@
     background-color: #1E2E67;
     box-sizing: border-box;
     height: 450px;
-    padding: 90px;
+    padding: 70px;
     margin-bottom: 50px;
+}
+
+image{
+    padding: auto;
 }
 
 .button{
@@ -15,6 +19,7 @@
     background-color: rgb(230, 0, 18);
     color: white;
     font-size: 25px;
+    margin-top: 20px;
 }
 .button:hover{
     border-radius: 20px;
