@@ -3,9 +3,13 @@
     justify-content: space-evenly;
 }
 .imagen{
-    background-color: blue;
+    background-color: #1E2E67;
     box-sizing: border-box;
+    height: 450px;
+    padding: 90px;
+    margin-bottom: 50px;
 }
+
 .button{
     border-radius: 20px;
     background-color: rgb(230, 0, 18);
