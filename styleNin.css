@@ -1,10 +1,10 @@
 .descripcion{
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 1.5rem;
+    padding-top: 140px;
+    padding-left: 70px;
 }
 .imagen{
-    background-color: #1E2E67;
+    background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150)) 0% 0% / cover repeat;
     box-sizing: border-box;
     height: 450px;
     padding: 70px;
@@ -12,6 +12,8 @@
 
 .image{
     border-radius: 1rem;
+    margin-bottom: -100px;
+    width: 100%;
 }
 
 .button{
