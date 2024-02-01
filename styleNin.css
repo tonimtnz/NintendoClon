@@ -1,7 +1,8 @@
 .descripcion{
-    display: flex;
+    display: inline-flex;
     padding-top: 140px;
     padding-left: 70px;
+    gap:2rem;
 }
 .imagen{
     background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150)) 0% 0% / cover repeat;
@@ -22,12 +23,22 @@
     color: white;
     font-size: 25px;
     margin-top: 20px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 20px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.125rem;
+    border-radius: 0.75rem;
+    border-width: 1px;
+    border-style: solid;
 }
 .button:hover{
     border-radius: 20px;
     background-color: rgb(172, 0, 13);
     color: white;
-    font-size: 25px;
+    border-radius: 0.75rem;
+    border-width: 1px;
+    border-style: solid;
 }
 
 body{
