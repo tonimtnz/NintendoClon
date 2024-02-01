@@ -1,17 +1,17 @@
 .descripcion{
     display: flex;
     justify-content: space-evenly;
+    padding-top: 1.5rem;
 }
 .imagen{
     background-color: #1E2E67;
     box-sizing: border-box;
     height: 450px;
     padding: 70px;
-    margin-bottom: 50px;
 }
 
-image{
-    padding: auto;
+.image{
+    border-radius: 1rem;
 }
 
 .button{
@@ -26,4 +26,8 @@ image{
     background-color: rgb(172, 0, 13);
     color: white;
     font-size: 25px;
+}
+
+body{
+    margin: 0;
 }
