@@ -1,0 +1,45 @@
+      /* Header*/
+    #nintendoLogo{
+        background-color: red;
+        color: white;
+    }
+
+    #searchHeader{
+        border: none;
+        border-bottom: 1px solid black;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        border-bottom: 1px solid black;
+    }
+    header ul{
+        display: flex;
+        list-style: none;
+    }
+
+    header li{
+        margin-right: 20px;
+    }
+
+    #segundoHeader{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        margin: 0;
+        position: absolute;
+        top: 70px;
+        left: 300px;
+    }
+
+    .segundoListItem{
+        padding-right: 15px;
+    }
+
+    /* Tuve que cambiar el body margin para eliminar un espacio en el borde del header*/
+    body{
+        margin: 0;
+    }
+        /* Header*/
