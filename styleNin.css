@@ -1,18 +1,54 @@
       /* Header*/
-    #nintendoLogo{
-        background-color: red;
-        color: white;
+
+    #forSticky{
+        position: sticky;
+        top: 0ch;
+        background-color: white;
+    }
+      #navHeader{
+        display: flex;
+        max-height: 50px;
     }
 
+    #nintendoBackgroundColor{
+        background-color: #E60012;
+        max-width: 105px;
+    }
+    #nintendoLogoHeader{
+        color: white;
+        height: 100%;
+        width: 66%;
+        padding-left: 19px;
+    }
+
+    #headerLeftSide{
+        justify-content: left;
+        width: 50%;
+        display: flex;
+    }
+
+    #headerRightSide{
+        justify-content: right;
+        width: 50%;
+        display: flex;
+    }
+
+    
     #searchHeader{
         border: none;
         border-bottom: 1px solid black;
+        align-items: center;
+        display: flex;
+        width: 400px;
+    }
+
+    #movingSearchBar{
+        display: flex;
+        padding-left: 20px;
+        padding-bottom: 10px;
     }
 
     header{
-        display: flex;
-        justify-content: space-between;
-        position: sticky;
         border-bottom: 1px solid black;
     }
     header ul{
@@ -28,18 +64,30 @@
         display: flex;
         list-style: none;
         justify-content: center;
-        margin: 0;
-        position: absolute;
-        top: 70px;
-        left: 300px;
+        padding-bottom: 10px;
     }
 
     .segundoListItem{
-        padding-right: 15px;
+        padding-right: 40px;
+        text-decoration: none;
+        color: #484848;
     }
 
-    /* Tuve que cambiar el body margin para eliminar un espacio en el borde del header*/
     body{
         margin: 0;
+    }
+
+    .linksHeader{
+        text-decoration: none;
+        color: #484848;
+        
+    }
+
+    .linksHeader:hover{
+        color: #E60012;
+    }
+
+    .segundoListItem:hover{
+        color: #E60012;
     }
         /* Header*/
