@@ -121,6 +121,7 @@
             position: absolute;
             top: 80vh;
             display: flex;
+            align-items: center;
             gap: 40px;
             border: 1px solid black;
             border-radius: 100px;
@@ -138,5 +139,15 @@
         #bottom-style-magnifying-glass{
             color: white;
         }
+
+        .icons-bottom-nav{
+            text-decoration: none;
+            color: #484848;
+        }
+
+        .icons-bottom-nav:hover{
+            color: #E60012;
+        }
+    
     }
         /* Header*/
