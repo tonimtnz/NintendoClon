@@ -12,13 +12,13 @@
 
     #nintendoBackgroundColor{
         background-color: #E60012;
-        max-width: 105px;
+        max-width: 180px;
     }
     #nintendoLogoHeader{
         color: white;
         height: 100%;
-        width: 66%;
-        padding-left: 19px;
+        width: 68.85px;
+        padding: 0 10px;
     }
 
     #headerLeftSide{
@@ -54,6 +54,7 @@
     header ul{
         display: flex;
         list-style: none;
+        align-items: center;
     }
 
     header li{
@@ -89,5 +90,53 @@
 
     .segundoListItem:hover{
         color: #E60012;
+    }
+
+    #bottom-nav-center{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    @media (min-width: 1025px){
+        #bottom-style-nav{
+            display: none;
+        }
+    }
+
+    @media (max-width: 1024px){
+        #forSticky{
+            background-color: #E60012;
+        }
+        #movingSearchBar{
+            display: none;
+        }
+        #segundoHeader{
+            display: none;
+        }
+        .right-side-li{
+            display: none;
+        }
+        #bottom-style-nav{
+            position: absolute;
+            top: 80vh;
+            display: flex;
+            gap: 40px;
+            border: 1px solid black;
+            border-radius: 100px;
+            box-shadow: rgb(0, 0, 0, 0.2) 0px 0.35rem 0.5rem 0px;
+            padding: 0px 50px;
+        }
+        #bottom-style-magnifying-glass-background{
+            background-color: #E60012;
+            border-radius: 50%;
+            height: 55px;
+            width: 55px;
+            display: flex;
+            justify-content: center;
+        }
+        #bottom-style-magnifying-glass{
+            color: white;
+        }
     }
         /* Header*/
