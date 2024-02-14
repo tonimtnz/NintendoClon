@@ -5,7 +5,7 @@
     gap:2rem;
 }
 .imagen{
-    background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150)) 0% 0% / cover repeat;
+    background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150));
     box-sizing: border-box;
     height: 450px;
     padding: 70px;
@@ -41,6 +41,41 @@
     border-width: 1px;
     border-style: solid;
     transform: scaleX(1.05) scaleY(1.05) translateZ(0px);
+}
+
+@media(max-width:1024px){
+    .image{
+        width: 100vw;
+        padding: 0;
+    }
+
+    .imagen{
+        padding: 0;
+        height: 207px;
+    }
+
+    .descripcion{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 150px;
+        padding-left: 0;
+        gap:-200px;
+        justify-content: center;
+    }
+
+    .descripcion h2{
+        background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150));
+        color: white;
+        width: 50rem;
+        padding: 4rem;
+
+    }
+
+    .button{
+        display: block;
+        
+        width: 50rem;
+    }
 }
 
 body{
