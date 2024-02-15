@@ -20,7 +20,6 @@
 }
 
 .button{
-    border-radius: 20px;
     background-color: rgb(230, 0, 18);
     color: white;
     font-size: 25px;
@@ -31,17 +30,13 @@
     white-space: nowrap;
     font-size: 1.125rem;
     border-radius: 0.75rem;
-    border-width: 1px;
-    border-style: solid;
     font-weight: 700;
+    border: none;
 }
 .button:hover{
-    border-radius: 20px;
     background-color: rgb(172, 0, 13);
     color: white;
     border-radius: 0.75rem;
-    border-width: 1px;
-    border-style: solid;
     transform: scaleX(1.05) scaleY(1.05) translateZ(0px);
 }
 
