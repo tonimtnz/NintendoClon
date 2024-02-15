@@ -1,4 +1,4 @@
-.characters-section {
+.news-section {
   width: 100%;
   margin: 0 auto;
   padding: 3rem 0;
@@ -7,8 +7,8 @@
   justify-content: center;
 }
 
-.main-content-character {
-  width: 78%;
+.main-content-news {
+  width: 1024px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,13 +23,15 @@ a {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
   gap: 2rem;
+  cursor: pointer;
+  margin-bottom: 4rem;
 }
 
-.card-news-2 {
+.card-larger {
   grid-column: span 2;
 }
 
-.card-news {
+.card-shorter {
   grid-column: span 1;
 }
 
@@ -37,15 +39,86 @@ a {
   width: 100%;
   border-radius: 0.75rem;
   margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
-/* a:hover .news-img {
-  transition: opacity 200ms ease-in-out 25ms;
-} */
+.card-news:hover img {
+  filter: brightness(60%);
+}
+
+.card-news:hover h3 {
+  color: #e60012;
+}
+
+.card-news:hover .read-more {
+  color: #ac000d;
+}
 
 .date-text {
   font-size: 1rem;
   margin: 0 0 1rem;
   color: #484848;
   font-weight: 300;
+  /* el peso de la fuente no está importado en la tipografía */
+}
+
+.text-space {
+  height: 67.2px;
+}
+
+h3 {
+  font-size: 1.125rem;
+  color: #484848;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-shorter h3 {
+  font-size: 1rem;
+  color: #484848;
+}
+.read-more {
+  color: #e60012;
+  border: none;
+  border-bottom: 2px solid #e60012;
+  background: none;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+
+.global-btn {
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  background-color: #e60012;
+  color: #fff;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.global-btn:hover {
+  background-color: #ac000d;
+  animation: bounceIn 0.5s ease;
+  transform: scale(1.05);
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.075);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  75% {
+    transform: scale(1.075);
+  }
+  100% {
+    transform: scale(1.05);
+  }
 }
