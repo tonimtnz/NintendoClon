@@ -33,6 +33,7 @@
     font-weight: 700;
     border: none;
 }
+
 .button:hover{
     background-color: rgb(172, 0, 13);
     color: white;
@@ -65,15 +66,16 @@
     .descripcion h2{
         background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150));
         color: white;
-        width: 50rem;
+        width: 60rem;
         padding: 4rem;
 
     }
 
     .button{
         display: block;
-        
+        position: relative;
         width: 50rem;
+        margin-top: -70px;
     }
 }
 
