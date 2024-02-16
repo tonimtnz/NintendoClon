@@ -7,8 +7,12 @@
   justify-content: center;
 }
 
+h2 {
+  font-size: 1.75rem;
+}
+
 .main-content-character {
-  width: 1024px;
+  width: 1140px;
   display: flex;
   align-items: center;
   justify-content: center;
