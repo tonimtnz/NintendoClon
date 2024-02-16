@@ -97,6 +97,7 @@ h3 {
   color: #fff;
   border-radius: 0.75rem;
   transition: all 0.3s ease-in-out;
+  font-weight: 700;
 }
 
 .global-btn:hover {
@@ -120,5 +121,35 @@ h3 {
   }
   100% {
     transform: scale(1.05);
+  }
+}
+@media (max-width: 768px) {
+  .cards-news-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .text-space {
+    height: 72px;
+  }
+}
+
+@media (max-width: 375px) {
+  .cards-news-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-shorter h3 {
+    font-size: 0.85rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .text-space {
+    height: 80px;
+  }
+
+  p {
+    font-size: 0.85rem;
   }
 }
