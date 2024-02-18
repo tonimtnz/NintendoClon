@@ -32,24 +32,40 @@
         width: 50%;
         display: flex;
     }
-
     
+    #search-bar-header{
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+    }
+
     #searchHeader{
         border: none;
-        border-bottom: 1px solid black;
         align-items: center;
         display: flex;
-        width: 400px;
+        width: 28vw;
+    }
+    
+    #all-categories{
+        border: none;
+        font-weight: bold;
+    }
+
+    .option-all-categories{
+        color: #484848;
+        
     }
 
     #movingSearchBar{
         display: flex;
-        padding-left: 20px;
-        padding-bottom: 10px;
+        border-bottom: 1PX solid rgb(72, 72, 72);
+        margin-bottom: 7px;
+        margin-left: 20px;
+        transition: 0.3s;
     }
 
     header{
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid gray;
     }
     header ul{
         display: flex;
@@ -69,27 +85,48 @@
     }
 
     .segundoListItem{
+        display: flex;
+        align-items: center;
+        gap: 5px;
         padding-right: 40px;
         text-decoration: none;
         color: #484848;
+        transition: 0.3s;
     }
 
     body{
         margin: 0;
     }
 
+    
     .linksHeader{
         text-decoration: none;
         color: #484848;
-        
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: 0.3s;
+    }
+    
+    #search-bar-header :hover{
+        color: #E60012;
+        transition: ease-in-out;
+    }
+    
+    #movingSearchBar:hover{
+        color: #E60012;
+        border-bottom: 1px solid #E60012;
+        transition: ease-in-out;
     }
 
     .linksHeader:hover{
         color: #E60012;
+        transition: ease-in-out;
     }
 
     .segundoListItem:hover{
         color: #E60012;
+        transition: ease-in-out;
     }
 
     #bottom-nav-center{
@@ -105,6 +142,9 @@
     }
 
     @media (max-width: 1024px){
+        header{
+            border: none;
+        }
         #forSticky{
             background-color: #E60012;
         }
@@ -123,12 +163,13 @@
             display: flex;
             align-items: center;
             gap: 40px;
-            border: 1px solid black;
             border-radius: 100px;
             box-shadow: rgb(0, 0, 0, 0.2) 0px 0.35rem 0.5rem 0px;
             padding: 0px 50px;
         }
         #bottom-style-magnifying-glass-background{
+            position: relative;
+            bottom: 10px;
             background-color: #E60012;
             border-radius: 50%;
             height: 55px;
