@@ -1,10 +1,16 @@
+.container{
+    width: 100vw;
+}
+
 .descripcion{
     display: flex;
-    margin-top: 120px;
-    margin-left: 5rem;
-    width: 100vw;
+    margin-top: 100px;
+    padding-left: 70px;
+    width: 80%;
     gap:2rem;
+    padding-top: 24px;
 }
+
 .imagen{
     background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150));
     box-sizing: border-box;
@@ -63,6 +69,47 @@
     animation-name: example  0.5s ease;
     transform: scale(1.05);
 }
+
+
+.barracontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.barraalgo{
+    background-color: #484848;
+    width: 31px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.barraalgo:hover{
+    background-color: rgb(230, 0, 18);
+    animation-name: example  0.5s ease;
+    transform: scale(1.05);
+}
+
+.barra{
+    display: flex;
+    width: 3rem;
+    height: 0.5rem;
+    border-radius: 100rem;
+    background-color: #969696;
+}
+
+.barra:hover{
+    background-color: rgb(230, 0, 18);
+}
+
+
 
 @media(max-width:1024px){
     .image{
