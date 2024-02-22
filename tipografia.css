@@ -16,31 +16,4 @@
     color: var(--color-font);
     line-height: var(--line-text);
   }
-  .footerbanner{
-    background-color: #e60012;
-    justify-items: end;
-    align-items: center;
-    box-sizing: border-box;
-    display: grid;
-    padding: 32px 16px;
-  }
-  .footerbannerstyle{
-    max-width: 1440px;
-    row-gap: 32px;
-    width: 1199px;
-    column-gap: 32px;
-    grid-template-columns: 839px 58px 58px 58px 58px;
-  }
-  .footerbanner svg{
-    color: white;
-  }
-  .footerIcon{
-    justify-self: start;
-    grid-column-start: "span 1"; 
-    grid-column-end: auto;
-  }
-  .footerLinkGrid{
-    display: grid;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+  

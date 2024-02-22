@@ -1,0 +1,245 @@
+body{
+    margin: auto;
+}
+.footerbanner{
+    background-color: #e60012;
+    justify-items: end;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1.5rem;
+
+  }
+  .footerPageContainer{
+    width: 100vw;   
+  }
+  .footerbannerstyle{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+  }
+  .Icon2{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
+  .footerbanner svg{
+    color: white;
+  }
+  .footerIcon{
+    justify-self: start;
+  }
+  .footerLinkGrid{
+    margin: 2rem 1.5rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "about shop orders support parents community"
+    "about shop orders support privacy ."
+    ;
+    gap: 2em;
+    padding: 0 1rem;
+  }
+  
+  
+  .NintendoLinks{
+    border-left: 1px solid #dadada;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+  }
+  
+  #AboutNintendoLinks{
+    border-style: hidden;
+    grid-area: about;
+  }
+  #ShopNintendoLinks{
+    grid-area: shop;
+  }
+  #MyNintendoStoreOrders{
+    grid-area: orders;
+  }
+  #SupportLinks{
+    grid-area: support;
+  }
+  #ParentsRelatedLinks{
+    grid-area: parents;
+  }
+  #CommunityRelatedLinks{
+    grid-area: community;
+  }
+  #PrivacyRelatedLinks{
+    grid-area: privacy;
+  }
+  .NintendoLinks h2{
+    font-size:16px;
+  }
+  
+  .NintendoLinks a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1em;
+  }
+  .NintendoLinks ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0.75rem
+  }
+  .NintendoLinks li{
+    list-style-type: none;
+    color: #e60012;
+  }
+  .NintendoLinks li a{
+    text-decoration: none;
+    font-size: 1rem;
+    transition: ease-in 300ms;
+  }
+  .footerLinkGrid a:hover{
+    text-decoration:  2px underline #AC000D;
+    transition: ease-in-out 300ms;
+    text-underline-offset: 0.5ch;
+  }
+  .footerLinkGrid ul a:hover{
+    text-decoration:  2px underline #AC000D;
+    color: #AC000D;
+    transition: ease-in-out 300ms;
+    text-underline-offset: 0.5ch;
+  }
+
+  .icono_footer_svg_linkbar{
+    display: flex;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+    justify-content: end;
+  }
+  .icono_footer_svg_linkbar a{
+    color: inherit;
+    text-decoration: none;
+    width: 62px;
+    height: 124px;
+  }
+  .icono_footer_svg_linkbar a svg{
+    height: inherit;
+    width: inherit;
+  }
+
+  .legal_bar_footer{
+    background-color: #242424;
+    bottom: 0px;
+    padding: 2rem 1rem;
+    font-size: 0.75em;
+    color: white;
+  }
+  .legal_bar_footer a{
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 300ms;
+  }
+  .legalbar_footer_links a:hover{
+    text-decoration: 2px underline #e60012;
+    text-underline-offset: 0.1rem;
+  }
+  .legalbar_footer_container_links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7rem;
+    justify-content: space-evenly;
+  }  
+  .legalbar_footer_links{
+    display: flex;
+    justify-content: center;
+    gap: 4ch;
+    grid-area: links;
+  }
+  .legalbar_texto{
+    grid-area: text;
+  }
+  .legalbar_footer_region{
+    grid-area: region;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .legalbar_footer_region:hover{
+    text-decoration: 2px underline white;
+    text-underline-offset: 0.2rem;
+  }
+  #flag_footer_region{
+    border: 0.5px solid white;
+    border-radius: 5px;
+  }
+
+  @media screen and (width < 1440px) {
+    #AboutNintendoLinks{
+      border-left: 1px solid #dadada; 
+    }
+    .footerLinkGrid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+      "about shop orders support"
+      "about shop orders support"
+      "parents community privacy ."
+      ;
+      gap: 2rem;
+    }
+    .legalbar_footer_container_links{
+      gap: 2rem;
+    }
+  }
+  
+  @media screen and (width < 1025px){
+    .footerLinkGrid{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+      "about shop orders"
+      "about shop orders"
+      "support parents community"
+      "support privacy ."
+      ;
+      gap: 2em;
+    }
+    .icono_footer_svg_linkbar{
+      justify-content: center;
+      margin-right: 0;
+    }
+    
+    .legalbar_footer_container_links{
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .legalbar_texto{
+      justify-self: center;
+      max-width: 50%;
+      text-align: center;
+    }
+    .legalbar_footer_region{
+      justify-self: center;
+    }
+  }
+  @media screen and (width<765px){
+    .footerbannerstyle{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+    }
+    
+    .footerLinkGrid{
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "about shop"
+      "about shop"
+      "orders support"
+      "orders support"
+      "parents community"
+      "privacy ."
+      ;
+      gap: 2em;
+    }
+  }
