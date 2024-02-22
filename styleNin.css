@@ -1,0 +1,26 @@
+.sellers_div_container{
+  width: 100vw;
+  border-top: 1px solid #dadada;
+}
+.sellers_container{
+  margin: 1rem 10rem;
+  font-size: large;
+}
+
+.header_bestsellers{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.title_bestsellers{
+  border-right: 1px solid #dadada;
+  padding-right: 1rem;
+}
+.link_bestsellers{
+  color: rgb(230, 0, 8);
+  text-underline-offset: 0.2em;
+}
+.card a{
+  color: rgb(72,72,72);
+}
