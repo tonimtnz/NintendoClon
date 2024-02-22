@@ -93,7 +93,8 @@ body{
     color: #e60012;
   }
   .NintendoLinks li a{
-    text-decoration: none;
+    text-decoration:  0px underline #AC000D;
+    /*text-decoration: none;*/
     font-size: 1rem;
     transition: ease-in 300ms;
   }
@@ -146,7 +147,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 7rem;
+    gap: 1rem;
     justify-content: space-evenly;
   }  
   .legalbar_footer_links{
@@ -189,6 +190,9 @@ body{
     }
     .legalbar_footer_container_links{
       gap: 2rem;
+    }
+    .legalbar_texto{
+      max-width: 40%;
     }
   }
   
