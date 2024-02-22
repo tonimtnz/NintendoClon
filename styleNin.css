@@ -59,11 +59,11 @@ a {
 }
 
 .date-text {
+  font-family: var(--nintendo-font-light);
   font-size: 1rem;
   margin: 0 0 1rem;
-  color: #484848;
-  font-weight: 300;
-  /* el peso de la fuente no está importado en la tipografía */
+  color: rgb(72, 72, 72);
+  font-weight: var(--font-weight-nintendo-light);
 }
 
 .text-space {

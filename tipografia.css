@@ -11,7 +11,7 @@
 :root {
   --nintendo-font: "museo-sans-700", -apple-system, BlinkMacSystemFont,
     sans-serif;
-  --nintendo-font: "museo-sans-300", -apple-system, BlinkMacSystemFont,
+  --nintendo-font-light: "museo-sans-300", -apple-system, BlinkMacSystemFont,
     sans-serif;
   --color-font: rgb(72, 72, 72);
   --font-weight-nintendo: 700;
