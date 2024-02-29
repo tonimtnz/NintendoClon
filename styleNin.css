@@ -1,4 +1,7 @@
       /* Header*/
+      body{
+        margin: 0;
+    }
 
     #forSticky{
         position: sticky;
@@ -23,28 +26,26 @@
     }
 
     #headerLeftSide{
-        justify-content: left;
         display: flex;
     }
 
     #headerRightSide{
-        justify-content: right;
-        width: 50%;
         display: flex;
+        width: 50%;
+        justify-content: flex-end;
     }
     
     #search-bar-header{
         display: flex;
-        align-items: center;
+        justify-content: space-between;
         transition: 0.3s;
-        max-width: 450px;
+        width: 100%;
     }
 
     #searchHeader{
         border: none;
         align-items: center;
         display: flex;
-        width: 28vw;
     }
     
     #all-categories{
@@ -53,22 +54,35 @@
         color: #484848;
     }
 
+    #all-categories:hover{
+        color: #E60012;
+    }
+
     .option-all-categories{
         color: #484848;
     }
 
     #movingSearchBar{
         display: flex;
+        justify-content: space-between;
         border-bottom: 1PX solid rgb(72, 72, 72);
         margin-bottom: 7px;
         margin-left: 20px;
         transition: 0.3s;
-        max-width: 450px;
+        width: 450px;
+        min-width: 355px;
+        padding-top: 9px;
+    }
+
+    #movingSearchBar:hover{
+        border-bottom: 1PX solid #E60012;
+        transition: ease-in-out;
     }
 
     header{
         border-bottom: 1px solid gray;
     }
+
     header ul{
         display: flex;
         list-style: none;
@@ -96,46 +110,51 @@
         transition: 0.3s;
     }
 
-    body{
-        margin: 0;
+    .segundoListItem:hover{
+        color: #E60012;
+        transition: ease-in-out;
     }
 
-    
     .linksHeader{
         text-decoration: none;
         color: #484848;
         display: flex;
         align-items: center;
-        gap: 5px;
+        gap: 4px;
         transition: 0.3s;
-    }
-    
-    #bottom-nav-center{
-        display: flex;
-        justify-content: center;
-    }
-    
-
-    #search-bar-header :hover{
-        color: #E60012;
-        transition: ease-in-out;
     }
 
     .linksHeader:hover{
         color: #E60012;
         transition: ease-in-out;
     }
+    
+    #bottom-nav-center{
+        display: flex;
+        justify-content: center;
+    }
 
-    .segundoListItem:hover{
+    #lupa-alloption{
+        display: flex;
+    }
+
+    #lupa-alloption:hover{
+        color: #E60012;
+        transition: all ease-in-out 0.3s;
+    }
+
+    #lupa-alloption:hover input::placeholder{
         color: #E60012;
         transition: ease-in-out;
     }
 
+    #bottom-style-nav{
+        display: none;
+    }
 
-
-    @media (min-width: 1025px){
-        #bottom-style-nav{
-            display: none;
+    @media (max-width: 1080px){
+        #movingSearchBar{
+            width: 400px;
         }
     }
 
@@ -143,18 +162,24 @@
         header{
             border: none;
         }
+
         #forSticky{
             background-color: #E60012;
         }
+
         #movingSearchBar{
             display: none;
         }
+
         #segundoHeader{
             display: none;
         }
+
         .right-side-li{
             display: none;
+
         }
+
         #bottom-style-nav{
             position: absolute;
             top: 80vh;
@@ -165,6 +190,7 @@
             box-shadow: rgb(0, 0, 0, 0.2) 0px 0.35rem 0.5rem 0px;
             padding: 0px 50px;
         }
+
         #bottom-style-magnifying-glass-background{
             position: relative;
             bottom: 10px;
@@ -175,6 +201,7 @@
             display: flex;
             justify-content: center;
         }
+
         #bottom-style-magnifying-glass{
             color: white;
         }
@@ -187,6 +214,5 @@
         .icons-bottom-nav:hover{
             color: #E60012;
         }
-    
     }
         /* Header*/
