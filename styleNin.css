@@ -1,8 +1,8 @@
-.container{
+.banner-container{
     width: 100vw;
 }
 
-.descripcion{
+.banner-descripcion{
     display: flex;
     margin-top: 100px;
     padding-left: 70px;
@@ -11,14 +11,14 @@
     padding-top: 24px;
 }
 
-.imagen{
+.banner-imagen{
     background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150));
     box-sizing: border-box;
     height: 450px;
     padding: 70px;
 }
 
-.image{
+.banner-image{
     border-radius: 1rem;
     margin-bottom: -100px;
     width: 100%;
@@ -42,7 +42,7 @@
       }
   }
 
-.button{
+.banner-button{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,7 +62,7 @@
     border: none;
 }
 
-.button:hover{
+.banner-button:hover{
     background-color: rgb(172, 0, 13);
     color: white;
     border-radius: 0.75rem;
@@ -71,7 +71,7 @@
 }
 
 
-.barracontainer{
+.banner-barracontainer{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -81,7 +81,7 @@
     gap: 30px;
 }
 
-.barraalgo{
+.banner-barraalgo{
     background-color: #484848;
     width: 31px;
     height: 31px;
@@ -91,13 +91,13 @@
     border-radius: 50%;
 }
 
-.barraalgo:hover{
+.banner-barraalgo:hover{
     background-color: rgb(230, 0, 18);
     animation-name: example  0.5s ease;
     transform: scale(1.05);
 }
 
-.barra{
+.banner-barra{
     display: flex;
     width: 3rem;
     height: 0.5rem;
@@ -105,24 +105,24 @@
     background-color: #969696;
 }
 
-.barra:hover{
+.banner-barra:hover{
     background-color: rgb(230, 0, 18);
 }
 
 
 
 @media(max-width:1024px){
-    .image{
+    .banner-image{
         width: 100vw;
         padding: 0;
     }
 
-    .imagen{
+    .banner-imagen{
         padding: 0;
         height: 207px;
     }
 
-    .descripcion{
+    .banner-descripcion{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -133,7 +133,7 @@
         gap:-200px;
     }
 
-    .descripcion h2{
+    .banner-descripcion h2{
         background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150));
         color: white;
         width: 60rem;
@@ -141,7 +141,7 @@
 
     }
 
-    .button{
+    .banner-button{
         display: block;
         position: relative;
         width: 50rem;
