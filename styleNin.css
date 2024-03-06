@@ -11,40 +11,31 @@ h2 {
   font-size: 1.75rem;
 }
 
-.main-content-character {
+.characters-main-content {
   width: 1140px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* .card-character {
-  flex: 1 1 20%;
-  /* display: flex;
-  flex-direction: column;
-  gap: 10px; 
-} */
-
-.card-character h3 {
+.characters-names {
   margin: 0;
   display: flex;
 }
 
-.character-a-container {
+.characters-a-container {
   display: block;
   position: relative;
   z-index: 1;
   min-width: 171.94px;
   max-width: 100%;
-  /* width: 100%;
-  height: 100%; */
   text-align: center;
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 0.5rem;
 }
 
-.bg-container {
+.characters-bg-container {
   position: absolute;
   z-index: -1;
   top: 0px;
@@ -52,56 +43,51 @@ h2 {
   width: 100%;
   height: 100%;
   transform: scale(1.15);
-  /* transition: transform 200ms ease-in-out 0s; */
+  transition: transform 200ms ease-in-out 0s;
 }
 
-.character-img-container {
+.characters-img-container {
   display: flex;
   z-index: -1;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  /* transition: transform 200ms ease-in-out 0s; */
   padding: 0px;
 }
 
-.grid-content {
-  /* padding: 0 2rem; */
-}
-
-.cards-container {
+.characters-cards-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
 @media only screen and (max-width: 600px) {
-  .cards-container {
+  .characters-cards-container {
     grid-template-columns: repeat(2, 1fr); /* Dos columnas para tablets */
   }
 }
 
-.img-character {
+.characters-img {
   display: block;
   min-height: 1px;
   width: 100%;
   transition: transform 200ms ease-in-out 0s;
 }
 
-.bg-img {
+.characters-bg-img {
   display: block;
   min-height: 1px;
   width: 100%;
   transition: transform 200ms ease-in-out 0s;
 }
 
-.character-a-container:hover .img-character {
+.characters-a-container:hover .characters-img {
   transform: scale(1.15);
   transition: transform 200ms ease-in-out 0s;
 }
 
-.character-a-container:hover .bg-img {
+.characters-a-container:hover .characters-bg-img {
   transform: scale(0.87);
   transition: transform 200ms ease-in-out 0s;
   object-fit: cover;
