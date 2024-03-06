@@ -1,0 +1,179 @@
+@import url(../Proyecto/NintendoClon-Development/tipografia.css);
+
+@media (max-width: 1125px) {
+  .online_store {
+    margin: 0 1rem;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .os_gs_imagenes {
+    width: 100%;
+    height: auto;
+  }
+  .button_store {
+    width: 100% !important;
+    justify-content: start;
+  }
+  .button_explore {
+    width: 100%;
+    gap: 0 !important;
+  }
+  .os_gs_text {
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100% !important;
+    font-size: 1.125rem !important ;
+    line-height: 1.4rem;
+  }
+  .global-btn {
+    width: 100% !important;
+    box-sizing: border-box;
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    background-color: #e60012;
+    color: #fff;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .global-btn:hover {
+    background-color: #ac000d;
+    animation: bounceIn 0.5s ease;
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .nintendoStore_imgs .nintendo_img {
+    display: none;
+  }
+  .nintendoStore_imgs .new_nintendo_img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.online_store {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1144px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.content_onlinestore {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+
+.online_header {
+  font-size: 28px;
+  line-height: 38px;
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.nintendo_img {
+  border-radius: 1rem;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.os_gs_imagenes {
+  width: 100%;
+  height: auto;
+}
+
+.new_nintendo_img {
+  border-radius: 1rem;
+  display: none;
+  width: 100%;
+  object-fit: cover;
+}
+.button_store {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.os_gs_text {
+  font-size: 1.3125rem;
+  width: 83%;
+  margin-bottom: 2rem;
+}
+
+.global-btn {
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  background-color: #e60012;
+  color: #fff;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease-in-out;
+}
+.global-btn:hover {
+  background-color: #ac000d;
+  animation: bounceIn 0.5s ease;
+  transform: scale(1.05);
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.075);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  75% {
+    transform: scale(1.075);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+hr {
+  border-color: rgb(218, 218, 218);
+  border-width: 0.0625rem 0px 0px;
+  border-style: solid;
+}
+
+.switch_img {
+  border-radius: 1rem;
+  display: block;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button_explore {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
