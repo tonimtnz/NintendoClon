@@ -2,6 +2,8 @@
   font-weight: 300;
   width: 100vw;
   margin-left: -170px;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
 }
 .featured_container{
   margin: 1rem 12rem;
@@ -27,6 +29,11 @@
   right: 0;
 }
 
+.lo-transparente-featured:hover{
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 200ms ease-in-out 25ms;
+}
+
 .header_featured{
   display: flex;
   flex-direction: row;
@@ -50,6 +57,22 @@
   padding-top: 15px;
   margin-left: -40px;
   overflow-x: hidden;
+}
+
+.bottom-div-featured{
+  width: 100vw;
+  position: relative;
+  margin-left: -10px;
+  margin-right: auto;
+  background-color: rgb(218, 218, 218);;
+}
+
+.top-div-featured{
+  width: 96%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(218, 218, 218);;
 }
 
 .card{
