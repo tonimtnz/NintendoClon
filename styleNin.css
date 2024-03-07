@@ -1,9 +1,14 @@
 .sellers_div_container{
   border-top: 1px solid #dadada;
   font-weight: 300;
+  display: flex;
+  flex-direction: column;
 }
 .sellers_container{
-  margin: 1rem 12rem;
+  margin: 1rem 25rem;
+}
+.sellers{
+  margin-bottom: 32px;
 }
 .bestsellers{
   overflow-x: hidden;
@@ -13,7 +18,7 @@
 .lo-transparente{
   background-color: rgba(12, 12, 12, 0.341);
   border-radius: 0.8rem;
-  margin: -2rem 12rem;
+  margin: -2rem 25.5rem;
   height: 22rem;
   width: 4rem;
   display: flex;
@@ -42,6 +47,7 @@
 .cards_container{
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .card{
@@ -60,6 +66,7 @@
 .card_link_container{
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .title_card_data h3{
@@ -98,6 +105,16 @@ img{
   background-color: rgb(230, 0, 8);
   padding: 0.1rem;
   border-radius: 5px;
+  position: relative;
+}
+.discount_price::before{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -15%;
+  top: 0;   
+  content:"";
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%207.36%2020%22%3E%20%20%20%20%3Cpath%20d%3D%22M7.369%200v20h-.181c-.558%200-1.094-.222-1.489-.617L.621%2014.305c-.397-.397-.62-.937-.616-1.5l.029-5.627c.003-.553.223-1.082.612-1.474L5.699.621C6.094.224%206.63%200%207.192%200h.177z%22%20fill%3D%22%23e60012%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E") no-repeat;
 }
 .footer_card_data{
   margin: 0rem 1rem 1rem 1rem;
@@ -119,3 +136,4 @@ a:hover .card_image_container{
   transition: ease-out 250ms;
   overflow: hidden;
 }
+
