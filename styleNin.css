@@ -59,6 +59,7 @@
 
     #all-categories:hover{
         color: #E60012;
+        transition: ease-in-out 0.3s;
     }
 
     .option-all-categories{
@@ -94,6 +95,19 @@
 
     header li{
         margin-right: 15px;
+    }
+
+    .container-flag{
+        border: 1px white solid;
+        border-radius: 4px;
+        padding: 0;
+        height: 15px;
+        width: 24px;
+        overflow: hidden;
+    }
+
+    .container-flag img{
+       margin-bottom: 2px;
     }
 
     #segundoHeader{
@@ -148,7 +162,7 @@
 
     #lupa-alloption:hover input::placeholder{
         color: #E60012;
-        transition: ease-in-out;
+        transition: ease-in-out 0.3s;
     }
 
     #bottom-style-nav{
