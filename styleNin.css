@@ -1,19 +1,21 @@
 .sellers_div_container{
-  border-top: 1px solid #dadada;
   font-weight: 300;
+  width: 100vw;
+  margin-left: -170px;
 }
 .sellers_container{
   margin: 1rem 12rem;
 }
 .bestsellers{
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   padding: 1rem 0rem;
 }
 
 .lo-transparente{
   background-color: rgba(12, 12, 12, 0.341);
   border-radius: 0.8rem;
-  margin: -2rem 12rem;
+  margin: -2rem 10rem;
+  margin-right: 5rem ;
   height: 22rem;
   width: 4rem;
   display: flex;
@@ -59,6 +61,7 @@
 .card_link_container{
   display: flex;
   flex-direction: column;
+  height: 295px;
 }
 
 .title_card_data h3{
