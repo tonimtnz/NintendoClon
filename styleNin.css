@@ -28,7 +28,7 @@
   z-index: 10;
   position: absolute;
   right: 0;
-  bottom: 20px;
+  bottom: -10px;
 }
 
 .header_bestsellers{
@@ -147,5 +147,6 @@ a:hover .card_image_container{
   }
   .lo-transparente{
     margin: -2rem 1rem;
+    right: 4px;
   }
 }
