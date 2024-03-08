@@ -1,11 +1,14 @@
 .sellers_div_container{
   border-top: 1px solid #dadada;
   font-weight: 300;
-  display: flex;
-  flex-direction: column;
+  max-width: 71.5rem;
+  margin: 0 auto;
+  width: 100%;
 }
 .sellers_container{
-  margin: 1rem 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .sellers{
   margin-bottom: 32px;
@@ -18,7 +21,7 @@
 .lo-transparente{
   background-color: rgba(12, 12, 12, 0.341);
   border-radius: 0.8rem;
-  margin: -2rem 25.5rem;
+  margin: -2rem 12rem;
   height: 22rem;
   width: 4rem;
   display: flex;
@@ -48,13 +51,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: start;
+  max-width: 71.5rem;
 }
 
 .card{
   margin-left: 2rem;
   border: 1px solid #dadada;
   border-radius: 1rem;
-  width: fit-content;
+  width: 260px;
   height: fit-content;
   font-size: small;
 }
@@ -73,12 +78,13 @@
   margin: 1rem 1rem 0 1rem;
   font-weight: medium;
   transition: ease-in 300ms;
+  text-wrap: wrap;
 }
 .title_card_data span{
   margin: 0 1rem;
   color: rgb(114, 114, 114);
 }
-img{
+.card img{
   width: 260px;
   height: 147px;
   margin: 0;
@@ -137,3 +143,11 @@ a:hover .card_image_container{
   overflow: hidden;
 }
 
+@media screen and (widht < 1440px) {
+  .cards_container{
+    margin: 0 20px;
+  }
+  .lo-transparente{
+    margin: -2rem 1rem;
+  }
+}
