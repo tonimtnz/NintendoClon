@@ -233,3 +233,328 @@
         }
     }
         /* Header*/
+
+.featured_div_container{
+  font-weight: 300;
+  width: 100vw;
+  margin-left: -170px;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+.featured_container{
+  margin: 1rem 12rem;
+}
+
+.bestsellers{
+  overflow-x: hidden;
+  padding: 1rem 0rem;
+}
+
+.lo-transparente-featured{
+  background-color: rgba(12, 12, 12, 0.341);
+  border-radius: 0.8rem;
+  margin: -2rem 10rem;
+  margin-right: 1rem ;
+  height: 22rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+}
+
+.lo-transparente-featured:hover{
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 200ms ease-in-out 25ms;
+}
+
+.header_featured{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
+.link_bestsellers{
+  color: rgb(230, 0, 8);
+  text-underline-offset: 0.2em;
+}
+
+.cards_container_featured{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 10px;
+  width: 100vw;
+  padding-top: 15px;
+  margin-left: -40px;
+  overflow-x: hidden;
+}
+
+.bottom-div-featured{
+  width: 100vw;
+  position: relative;
+  margin-left: -10px;
+  margin-right: auto;
+  background-color: rgb(218, 218, 218);;
+}
+
+.top-div-featured{
+  width: 96%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(218, 218, 218);;
+}
+
+.card{
+  margin-left: 2rem;
+  border: 1px solid #dadada;
+  border-radius: 1rem;
+  width: fit-content;
+  height: fit-content;
+  font-size: small;
+}
+.card a{
+  text-decoration: none;
+  color: rgb(72,72,72);
+}
+
+.card_link_container{
+  display: flex;
+  flex-direction: column;
+  height: 295px;
+  justify-content: space-between;
+}
+
+.title_card_data h3{
+  margin: 1rem 1rem 0 1rem;
+  font-weight: medium;
+  transition: ease-in 300ms;
+  width: 200px;
+}
+.title_card_data span{
+  margin: 0 1rem;
+  color: rgb(114, 114, 114);
+}
+
+img{
+  width: 260px;
+  height: 147px;
+  margin: 0;
+  border: 0px solid #dadada;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+.product_info_card_data{
+  margin: 1.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+.real_price{
+  font-size: medium;
+}
+.dotted_price{
+  text-decoration: 2px line-through;
+}
+.discount_price_featured{
+  color: white;
+  background-color: rgb(75, 92, 206);
+  padding: 0px 0.5rem;
+  border-radius: 5px;
+  
+}
+
+.discount_blue_featured{
+  color: white;
+  background-color: rgb(230, 0, 18);
+  padding: 0px 0.5rem;
+  border-radius: 5px;
+}
+
+.footer_card_data{
+  margin: 0rem 1rem 1rem 1rem;
+}
+
+/* .console_info{
+  border-left: 2px solid rgb(230, 0, 8);
+  
+} */
+
+.console_info2{
+  border-left: 2px solid rgb(230, 0, 8);
+  padding-left: 0.25rem;
+}
+
+a:hover h3{
+  color:rgb(230, 0, 8);
+  transition: ease-in-out 300ms;
+}
+a:hover .card_image_container{
+  transition: ease-in 250ms;
+  transform: translateY(-1rem);
+}
+.card_image_container{
+  transition: ease-out 250ms;
+  overflow: hidden;
+}.banner-container{
+    width: 100vw;
+}
+
+.banner-descripcion{
+    display: flex;
+    margin-top: 100px;
+    padding-left: 70px;
+    width: 80%;
+    gap:2rem;
+    padding-top: 24px;
+}
+
+.banner-imagen{
+    background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150));
+    box-sizing: border-box;
+    height: 450px;
+    width: fit-content;
+    padding: 70px;
+}
+
+.banner-image{
+    border-radius: 1rem;
+    margin-bottom: -100px;
+    width: 100%;
+    height: min-content;
+}
+
+@keyframes example {
+    0% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(1.075);
+      }
+      50% {
+        transform: scale(1.03);
+      }
+      75% {
+        transform: scale(1.075);
+      }
+      100% {
+        transform: scale(1.05);
+      }
+  }
+
+.banner-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 0, 18);
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 20px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.125rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    border: none;
+}
+
+.banner-button:hover{
+    background-color: rgb(172, 0, 13);
+    color: white;
+    border-radius: 0.75rem;
+    animation-name: example  0.5s ease;
+    transform: scale(1.05);
+}
+
+
+.banner-barracontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.banner-barraalgo{
+    background-color: #484848;
+    width: 31px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.banner-barraalgo:hover{
+    background-color: rgb(230, 0, 18);
+    animation-name: example  0.5s ease;
+    transform: scale(1.05);
+}
+
+.banner-barra{
+    display: flex;
+    width: 3rem;
+    height: 0.5rem;
+    border-radius: 100rem;
+    background-color: #969696;
+}
+
+.banner-barra:hover{
+    background-color: rgb(230, 0, 18);
+}
+
+
+
+@media(max-width:1024px){
+    .banner-image{
+        width: 100vw;
+        padding: 0;
+    }
+
+    .banner-imagen{
+        padding: 0;
+        height: 207px;
+    }
+
+    .banner-descripcion{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-left: 0;
+        width: 100vw;
+        margin-left: 0;
+        gap:-200px;
+    }
+
+    .banner-descripcion h2{
+        background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150));
+        color: white;
+        width: 60rem;
+        padding: 4rem;
+
+    }
+
+    .banner-button{
+        display: block;
+        position: relative;
+        width: 50rem;
+        margin-top: -70px;
+        margin-left: 70px;
+    }
+}
+
