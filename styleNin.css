@@ -26,14 +26,23 @@
     border-radius: 0.8rem;
     height: 22rem;
     width: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  position: absolute;
-  right: 0;
-  bottom: -10px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    transition: all ease-in-out 0.3s;
+  }
+  .lo-transparente:hover{
+    background-color: rgba(12,12,12, 0.75);
+  }
+  .lo-transparente svg:hover{
+    transform: scale(1.25);
+    transition: all ease-in-out 0.3s;
+  }
+
 .numb2{
   bottom: 25px
 }
