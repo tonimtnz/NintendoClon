@@ -245,7 +245,7 @@
 
 .featured_div_container{
   font-weight: 300;
-  width: 100vw;
+  width: 100%;
   margin-left: -170px;
   padding-top: 0.5rem;
   padding-bottom: 2rem;
@@ -298,16 +298,16 @@
   flex-direction: row;
   justify-content: left;
   gap: 10px;
-  width: 100vw;
+  width: 100%;
   padding-top: 15px;
   margin-left: -40px;
   overflow-x: hidden;
 }
 
 .bottom-div-featured{
-  width: 100vw;
-  position: relative;
-  background-color: rgb(218, 218, 218);
+
+    background-color: rgb(218, 218, 218);
+
 }
 
 .top-div-featured{
@@ -412,7 +412,7 @@ a:hover .card_image_container{
   transition: ease-out 250ms;
   overflow: hidden;
 }.banner-container{
-    width: 100vw;
+    width: 100%;
 }
 
 .banner-descripcion{
@@ -491,7 +491,7 @@ a:hover .card_image_container{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     margin-top: 40px;
     gap: 30px;
 }
@@ -528,7 +528,7 @@ a:hover .card_image_container{
 
 @media(max-width:1024px){
     .banner-image{
-        width: 100vw;
+        width: 100%;
         padding: 0;
     }
 
@@ -543,7 +543,7 @@ a:hover .card_image_container{
         flex-wrap: wrap;
         padding-top: 20px;
         padding-left: 0;
-        width: 100vw;
+        width: 100%;
         margin-left: 0;
         gap:-200px;
     }
