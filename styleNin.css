@@ -298,7 +298,7 @@
   flex-direction: row;
   justify-content: left;
   gap: 10px;
-  width: 100%;
+  width: 100vw;
   padding-top: 15px;
   margin-left: -40px;
   overflow-x: hidden;
