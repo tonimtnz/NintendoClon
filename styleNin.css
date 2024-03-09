@@ -307,9 +307,7 @@
 .bottom-div-featured{
   width: 100vw;
   position: relative;
-  margin-left: -10px;
-  margin-right: auto;
-  background-color: rgb(218, 218, 218);;
+  background-color: rgb(218, 218, 218);
 }
 
 .top-div-featured{
@@ -317,7 +315,7 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(218, 218, 218);;
+  background-color: rgb(218, 218, 218);
 }
 
 .card{
