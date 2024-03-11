@@ -587,7 +587,7 @@ a:hover .card_image_container{
     width: 100%;
     gap: 0 !important;
   }
-  .os_gs_text {
+  .os_gs_text,  .os_gs_text1 {
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
@@ -595,6 +595,7 @@ a:hover .card_image_container{
     font-size: 1.125rem !important ;
     line-height: 1.4rem;
   }
+
   .global-btn {
     width: 100% !important;
     box-sizing: border-box;
@@ -685,6 +686,10 @@ a:hover .card_image_container{
 .os_gs_text {
   font-size: 1.3125rem;
   width: 83%;
+  margin-bottom: 2rem;
+}
+.os_gs_text1 {
+  font-size: 1.3125rem;
   margin-bottom: 2rem;
 }
 
