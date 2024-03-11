@@ -272,6 +272,7 @@
   z-index: 10;
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 
 .lo-transparente-featured:hover{
@@ -587,7 +588,16 @@ a:hover .card_image_container{
     width: 100%;
     gap: 0 !important;
   }
-  .os_gs_text,  .os_gs_text1 {
+  .os_gs_text {
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100% !important;
+    font-size: 1.125rem !important ;
+    line-height: 1.4rem;
+  }
+
+  .os_gs_text1{
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
@@ -680,10 +690,16 @@ a:hover .card_image_container{
   align-items: center;
   width: 100%;
   padding-top: 1rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
-.os_gs_text,.os_gs_text1 {
+.os_gs_text {
+  font-size: 1.3125rem;
+  margin-bottom: 2rem;
+  width: 45em;
+}
+
+.os_gs_text1{
   font-size: 1.3125rem;
   margin-bottom: 2rem;
 }
