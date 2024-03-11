@@ -683,12 +683,7 @@ a:hover .card_image_container{
   flex-wrap: wrap;
 }
 
-.os_gs_text {
-  font-size: 1.3125rem;
-  width: 83%;
-  margin-bottom: 2rem;
-}
-.os_gs_text1 {
+.os_gs_text,.os_gs_text1 {
   font-size: 1.3125rem;
   margin-bottom: 2rem;
 }
