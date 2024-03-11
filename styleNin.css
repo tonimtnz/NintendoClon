@@ -483,7 +483,7 @@ a:hover .card_image_container{
     background-color: rgb(172, 0, 13);
     color: white;
     border-radius: 0.75rem;
-    animation-name: example  0.5s ease;
+    animation: bounceIn 0.5s ease;
     transform: scale(1.05);
 }
 
