@@ -96,6 +96,7 @@
 .os_gs_imagenes {
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 .new_nintendo_img {
@@ -103,6 +104,7 @@
   display: none;
   width: 100%;
   object-fit: cover;
+  /* poner el pointer */
 }
 .button_store {
   display: flex;
