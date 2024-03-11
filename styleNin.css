@@ -104,7 +104,6 @@
   display: none;
   width: 100%;
   object-fit: cover;
-  /* poner el pointer */
 }
 .button_store {
   display: flex;
