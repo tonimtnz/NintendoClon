@@ -1191,8 +1191,8 @@ a:hover .card_image_container{
 }
 }
 footer{
-  margin: -1rem;
-  bottom: 0;
+  box-sizing: border-box;
+  position: relative;
 }
 .footerbanner{
     background-color: #e60012;
