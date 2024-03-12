@@ -309,19 +309,25 @@ header li {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  gap: 10px;
+  gap: 2rem;
   width: 100%;
   padding-top: 15px;
-  margin-left: -40px;
   overflow-x: hidden;
 }
 
-/* cards_container_featured .card {
+.cards_container_featured .card {
   display: flex;
-  flex-direction: column;
-  height: 295px;
   justify-content: space-between;
-} */
+  flex-direction: column;
+  width: 100%;
+  min-width: 260px;
+  border: 1px solid #dadada;
+  border-radius: 1rem;
+}
+
+.card h3 {
+  font-size: 1rem;
+}
 
 .bottom-div-featured {
   background-color: rgb(218, 218, 218);
@@ -336,14 +342,6 @@ header li {
   background-color: rgb(218, 218, 218);
 }
 
-.card {
-  margin-left: 2rem;
-  border: 1px solid #dadada;
-  border-radius: 1rem;
-  width: 260px;
-  height: fit-content;
-  font-size: small;
-}
 .card a {
   text-decoration: none;
   color: rgb(72, 72, 72);
@@ -509,6 +507,7 @@ a:hover .card_image_container {
   .banner-image-mobile {
     display: flex;
     width: 100%;
+    object-fit: cover;
   }
 
   /* .banner-image {
@@ -519,6 +518,10 @@ a:hover .card_image_container {
 
   .banner-imagen {
     padding: 0;
+    width: 100%;
+  }
+
+  .banner-grande {
     width: 100%;
   }
 
@@ -540,7 +543,7 @@ a:hover .card_image_container {
     color: white;
     width: 100%;
     text-align: center;
-    margin: 0;
+    margin-top: 0;
     padding: 2rem 2rem 3rem 2rem;
     margin-bottom: -2.5rem;
   }
