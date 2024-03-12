@@ -280,6 +280,12 @@ header li {
   position: absolute;
   right: 0;
   cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.lo-transparente-featured:hover svg {
+  transform: scale(1.25);
+  transition: all ease-in-out 0.3s;
 }
 
 .lo-transparente-featured:hover {
@@ -310,6 +316,13 @@ header li {
   overflow-x: hidden;
 }
 
+/* cards_container_featured .card {
+  display: flex;
+  flex-direction: column;
+  height: 295px;
+  justify-content: space-between;
+} */
+
 .bottom-div-featured {
   background-color: rgb(218, 218, 218);
 }
@@ -327,7 +340,7 @@ header li {
   margin-left: 2rem;
   border: 1px solid #dadada;
   border-radius: 1rem;
-  width: fit-content;
+  width: 260px;
   height: fit-content;
   font-size: small;
 }
@@ -336,14 +349,9 @@ header li {
   color: rgb(72, 72, 72);
 }
 
-.card_link_container {
-  display: flex;
-  flex-direction: column;
-  height: 295px;
-  justify-content: space-between;
-}
 .title_card_data {
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .title_card_data h3 {
@@ -358,8 +366,8 @@ header li {
 }
 
 .cards_container_featured img {
-  width: 260px;
-  height: 147px;
+  width: 100%;
+  /* height: 147px; */
   margin: 0;
   border: 0px solid #dadada;
   border-radius: 1rem;
@@ -421,7 +429,8 @@ a:hover .card_image_container {
 }
 .banner-container {
   width: 100%;
-  padding-bottom: 2rem;
+  margin: 0 auto;
+  /* padding-bottom: 2rem; */
 }
 
 .banner-imagen {
@@ -443,7 +452,7 @@ a:hover .card_image_container {
   padding-top: 2rem;
 }
 
-.banner-image-dektop {
+.banner-image-desktop {
   border-radius: 1rem;
   margin-bottom: -90px;
   width: 100%;
@@ -460,7 +469,7 @@ a:hover .card_image_container {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   gap: 1.5rem;
 }
 
@@ -493,41 +502,47 @@ a:hover .card_image_container {
 }
 
 @media (max-width: 1024px) {
-  .banner-image {
+  .banner-image-desktop {
+    display: none;
+    margin: 0;
+  }
+  .banner-image-mobile {
+    display: flex;
+    width: 100%;
+  }
+
+  /* .banner-image {
     border-radius: 0;
     height: 23rem;
     padding: 0;
-  }
+  } */
 
   .banner-imagen {
     padding: 0;
-    height: 207px;
+    width: 100%;
   }
 
   .banner-descripcion {
     display: flex;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    padding-left: 0;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* padding-top: 20px; */
+    padding: 0 1rem;
     width: 100%;
     margin: 0;
+    gap: 1rem;
   }
 
   .banner-descripcion h2 {
-    background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150));
+    background: #005aa7;
     color: white;
-    width: 60rem;
-    padding: 4rem;
-  }
-
-  .banner-button {
-    display: block;
-    position: relative;
-    width: 50rem;
-    margin-top: -70px;
-    margin-left: 70px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 2rem 2rem 3rem 2rem;
+    margin-bottom: -2.5rem;
   }
 }
 
@@ -840,7 +855,7 @@ h2 {
   transform: scale(1.05);
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
   .global-btn {
     width: auto;
   }
@@ -999,8 +1014,8 @@ h2 {
   .lo-transparente {
     background-color: rgba(12, 12, 12, 0.341);
     border-radius: 0.8rem;
-    height: 22rem;
-    width: 4rem;
+    height: 24rem;
+    width: 4.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1012,8 +1027,10 @@ h2 {
   }
   .lo-transparente:hover {
     background-color: rgba(12, 12, 12, 0.75);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
   }
-  .lo-transparente svg:hover {
+  .lo-transparente:hover svg {
     transform: scale(1.25);
     transition: all ease-in-out 0.3s;
   }
@@ -1060,13 +1077,10 @@ h2 {
   .card_link_container {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    /* height: 295px; */
+    justify-content: space-between;
   }
 
-  .title_card_data span {
-    margin: 0 1rem;
-    color: rgb(114, 114, 114);
-  }
   .card img {
     width: 260px;
     height: 147px;
