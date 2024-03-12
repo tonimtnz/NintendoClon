@@ -511,7 +511,9 @@ footer{
     text-decoration: none;
     color: inherit;
     font-size: 1em;
-  }
+    transition: all ease-in-out 0.3s;
+  } 
+
   .NintendoLinks ul{
     display: flex;
     flex-direction: column;
@@ -523,10 +525,8 @@ footer{
     color: #e60012;
   }
   .NintendoLinks li a{
-    text-decoration:  0px underline #AC000D;
-    /*text-decoration: none;*/
+    text-decoration: none;
     font-size: 1rem;
-    transition: ease-in 300ms;
   }
   .footerLinkGrid a:hover{
     text-decoration:  2px underline #AC000D;
