@@ -1401,6 +1401,10 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 2em;
+    padding: 0;
+  }
+  .Icon2{
+    gap: 3rem;
   }
   .legal_bar_footer{
     padding-bottom: 8rem;
