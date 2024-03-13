@@ -87,7 +87,7 @@ html {
 }
 
 header {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 header ul {
@@ -127,6 +127,10 @@ header li {
   display: flex;
   list-style: none;
   justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 44px;
 }
 
 .segundoListItem {
@@ -428,25 +432,27 @@ a:hover .card_image_container {
 .banner-container {
   width: 100%;
   margin: 0 auto;
-  /* padding-bottom: 2rem; */
 }
 
 .banner-imagen {
-  /* background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150)); */
   background-color: #005aa7;
   box-sizing: border-box;
-  max-height: 520px;
   width: 100%;
   padding: 2rem;
 }
+.main-title-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
 
-.banner-descripcion {
+.main-title-text {
   display: flex;
   align-items: center;
-  padding: 1.5rem 2rem;
   width: 100%;
   gap: 2rem;
-  margin: 2rem 0 0 0;
+  margin: 2rem 2rem 0 2rem;
   padding-top: 2rem;
 }
 
@@ -467,7 +473,7 @@ a:hover .card_image_container {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 1.5rem 0;
+  margin: 3rem 0 2rem 0;
   gap: 1.5rem;
 }
 
@@ -510,12 +516,6 @@ a:hover .card_image_container {
     object-fit: cover;
   }
 
-  /* .banner-image {
-    border-radius: 0;
-    height: 23rem;
-    padding: 0;
-  } */
-
   .banner-imagen {
     padding: 0;
     width: 100%;
@@ -526,35 +526,54 @@ a:hover .card_image_container {
   }
 
   .banner-descripcion {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    /* flex-wrap: wrap; */
-    /* padding-top: 20px; */
-    padding: 0 1rem;
+    position: relative;
     width: 100%;
-    margin: 0;
-    gap: 1rem;
   }
 
-  .banner-descripcion h2 {
-    background: #005aa7;
-    color: white;
+  .main-title-text-container {
+    flex-direction: column;
+    padding: 0;
     width: 100%;
+    margin: 0;
+    gap: 0;
+  }
+  .main-title-text {
+    background: #005aa7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .main-title-text h2 {
+    color: white;
     text-align: center;
-    margin-top: 0;
-    padding: 2rem 2rem 3rem 2rem;
-    margin-bottom: -2.5rem;
+    margin: 0;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+
+  .btn-container-main {
+    width: 96%;
+    margin-bottom: -1.5rem;
   }
 }
 
-@import url(../Proyecto/NintendoClon-Development/tipografia.css);
+@media (max-width: 432px) {
+  .banner-descripcion h2 {
+    font-size: 1.125rem;
+  }
+  .banner-barracontainer {
+    gap: 1rem;
+  }
+}
 
 @media (max-width: 1125px) {
   .online_store {
-    margin: 0 1rem;
-    width: 100%;
+    margin: 0 1rem !important;
+    padding: 0;
     flex-direction: column;
   }
 
@@ -563,8 +582,7 @@ a:hover .card_image_container {
     height: auto;
   }
   .button_store {
-    width: 100% !important;
-    justify-content: start;
+    flex-direction: column;
   }
   .button_explore {
     width: 100%;
@@ -992,7 +1010,6 @@ h2 {
 }
 
 .sellers_div_container {
-  border-top: 1px solid #dadada;
   font-weight: 300;
   max-width: 1144px;
   width: 100%;
