@@ -218,7 +218,7 @@ header li {
   #bottom-style-nav {
     background-color: white;
     position: fixed;
-    top: 80vh;
+    top: 85vh;
     z-index: 99;
     display: flex;
     align-items: center;
@@ -1403,7 +1403,7 @@ h2 {
     gap: 2em;
   }
   .legal_bar_footer{
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
   }
   .footerLinkGrid {
     grid-template-columns: 1fr 1fr;
