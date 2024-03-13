@@ -167,6 +167,7 @@ header li {
 #bottom-nav-center {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 #lupa-alloption {
@@ -218,14 +219,15 @@ header li {
   #bottom-style-nav {
     background-color: white;
     position: fixed;
-    top: 85vh;
+    width: 96%;
+    bottom: 2rem;
     z-index: 99;
     display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: center;
+    gap: 3rem;
     border-radius: 100px;
     box-shadow: rgb(0, 0, 0, 0.2) 0px 0.35rem 0.5rem 0px;
-    padding: 0px 50px;
   }
 
   #bottom-style-magnifying-glass-background {
@@ -456,7 +458,7 @@ a:hover .card_image_container {
   padding-top: 2rem;
 }
 
-.banner-image-dektop {
+.banner-image-desktop {
   border-radius: 1rem;
   margin-bottom: -90px;
   width: 100%;
@@ -506,7 +508,7 @@ a:hover .card_image_container {
 }
 
 @media (max-width: 1024px) {
-  .banner-image-dektop {
+  .banner-image-desktop {
     display: none;
     margin: 0;
   }
@@ -559,6 +561,9 @@ a:hover .card_image_container {
     width: 96%;
     margin-bottom: -1.5rem;
   }
+  #bottom-style-nav {
+    gap: 5rem;
+  }
 }
 
 @media (max-width: 432px) {
@@ -567,6 +572,9 @@ a:hover .card_image_container {
   }
   .banner-barracontainer {
     gap: 1rem;
+  }
+  #bottom-style-nav {
+    gap: 2rem;
   }
 }
 
@@ -766,7 +774,7 @@ hr {
 .news-section,
 .characters-section {
   width: auto;
-  margin: 1rem 1rem;
+  margin: 0 1rem;
   padding: 2rem 0;
   display: flex;
   align-items: center;
@@ -889,7 +897,7 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
   }
   .news-text-space {
-    height: 60px;
+    height: 80px;
   }
 
   .news-grid-content {
@@ -921,15 +929,6 @@ h2 {
   }
 }
 /* ------------------ */
-
-.characters-section {
-  width: 100%;
-  margin: 0 auto;
-  padding: 3rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .characters-names {
   margin: 0;
@@ -977,6 +976,9 @@ h2 {
 @media only screen and (max-width: 678px) {
   .characters-cards-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  #bottom-style-nav {
+    gap: 3rem;
   }
 }
 
@@ -1359,7 +1361,6 @@ h2 {
   }
   .legalbar_texto {
     max-width: 40%;
-    
   }
 }
 
@@ -1403,10 +1404,10 @@ h2 {
     gap: 2em;
     padding: 0;
   }
-  .Icon2{
+  .Icon2 {
     gap: 3rem;
   }
-  .legal_bar_footer{
+  .legal_bar_footer {
     padding-bottom: 8rem;
   }
   .footerLinkGrid {
@@ -1419,5 +1420,23 @@ h2 {
       "parents community"
       "privacy .";
     gap: 2em;
+  }
+}
+.heart_button_style {
+  border: none;
+  background-color: transparent;
+}
+
+.heart_button_style:hover {
+  cursor: pointer;
+}
+
+@media (width < 425px) {
+  h2,
+  .online_header {
+    font-size: 21px;
+  }
+  #bottom-style-nav {
+    gap: 1.5rem;
   }
 }
