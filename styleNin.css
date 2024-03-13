@@ -262,7 +262,7 @@ header li {
   padding-bottom: 2rem;
 }
 .featured_container {
-  margin: 0 1rem 0 2rem;
+  margin: 3rem 1rem 3rem 2rem;
 }
 
 .bestsellers {
@@ -431,7 +431,7 @@ a:hover .card_image_container {
 }
 .banner-container {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
 }
 
 .banner-imagen {
@@ -456,7 +456,7 @@ a:hover .card_image_container {
   padding-top: 2rem;
 }
 
-.banner-image-desktop {
+.banner-image-dektop {
   border-radius: 1rem;
   margin-bottom: -90px;
   width: 100%;
@@ -506,7 +506,7 @@ a:hover .card_image_container {
 }
 
 @media (max-width: 1024px) {
-  .banner-image-desktop {
+  .banner-image-dektop {
     display: none;
     margin: 0;
   }
@@ -643,7 +643,7 @@ a:hover .card_image_container {
   flex-direction: column;
   justify-content: center;
   max-width: 1144px;
-  margin: 0 auto;
+  margin: 3rem auto;
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
@@ -766,7 +766,7 @@ hr {
 .news-section,
 .characters-section {
   width: auto;
-  margin: 0 1rem;
+  margin: 1rem 1rem;
   padding: 2rem 0;
   display: flex;
   align-items: center;
@@ -1013,7 +1013,7 @@ h2 {
   font-weight: 300;
   max-width: 1144px;
   width: 100%;
-  margin: 1rem auto 7rem auto;
+  margin: 3rem auto 5rem auto;
   .sellers_container {
     display: flex;
     flex-direction: column;
@@ -1242,10 +1242,10 @@ h2 {
 }
 
 .NintendoLinks a {
-  text-decoration: none;
+  text-decoration: 0px solid #ac000d;
   color: inherit;
   font-size: 1em;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in 0.3s;
 }
 
 .NintendoLinks ul {
@@ -1259,18 +1259,19 @@ h2 {
   color: #e60012;
 }
 .NintendoLinks li a {
-  text-decoration: none;
+  text-decoration: 0px solid;
   font-size: 1rem;
+  transition: all ease-in-out 0.3s;
 }
 .footerLinkGrid a:hover {
-  text-decoration: 2px underline #ac000d;
-  transition: ease-in-out 300ms;
+  text-decoration: 2.5px underline #ac000d;
+  transition: all ease-out 300ms;
   text-underline-offset: 0.5ch;
 }
 .footerLinkGrid ul a:hover {
-  text-decoration: 2px underline #ac000d;
+  text-decoration: 2.5px underline #ac000d;
   color: #ac000d;
-  transition: ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
   text-underline-offset: 0.5ch;
 }
 
@@ -1350,12 +1351,15 @@ h2 {
       "about shop orders support"
       "parents community privacy .";
     gap: 2rem;
+    font-family: var(--font-weight-nintendo-light);
   }
+
   .legalbar_footer_container_links {
     gap: 2rem;
   }
   .legalbar_texto {
     max-width: 40%;
+    
   }
 }
 
